@@ -3,15 +3,42 @@ nav ul li a{
     text-decoration: none;
     color: black;
     font-size: 20px;
-
 }
 
-ul li{
+nav > ul {
+    display: flex;
+}
+
+nav li{
     list-style: none;
-    display: inline;
     padding: 7px 12px;
+    
+    
+   
 }
 ul li:hover{
     background-color:gray;
-
 }
+
+.submenu{
+    display: none;
+    position: absolute;
+    background-color: lightgray;
+    padding-left: 0px;
+    margin-top: 7px;
+}
+
+nav li:hover .submenu{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
